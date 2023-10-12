@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  background: var(--very-light-gray);
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--very-light-gray);
+  margin-top: 3rem;
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--transparent-white);
+  margin-top: 2.9rem;
+  line-height: 2.4rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.6rem;
+  width: 150px;
+  height: 50px;
+  border: 1px solid var(--very-light-gray);
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 8.3rem;
+  background: var(--very-light-gray);
+}
+
+.cards {
+  display: flex;
+  margin-top: 40px;
+}
+
+.card {
+  width: 306px;
+  height: 500px;
+  padding: 4.7rem;
+}
+
+.card__left {
+  background: var(--bright-orange);
+}
+
+.card__left button {
+  color: var(--bright-orange);
+}
+
+.card__left button:hover {
+  background: var(--bright-orange);
+  color: var(--very-light-gray);
+}
+
+.card__middle {
+  background: var(--dark-cyan);
+}
+
+.card__middle button {
+  color: var(--dark-cyan);
+}
+
+.card__middle button:hover {
+  background: var(--dark-cyan);
+  color: var(--very-light-gray);
+}
+
+.card__right {
+  background: var(--very-dark-cyan);
+}
+
+.card__right button {
+  color: var(--very-dark-cyan);
+}
+
+.card__right button:hover {
+  background: var(--very-dark-cyan);
+  color: var(--very-light-gray);
+}
+
+@media (max-width: 920px) {
+  main {
+    height: 100%;
+    margin-bottom: 5rem;
+  }
+  .cards {
+    display: grid;
+    place-content: center;
+  }
+}
