@@ -70,6 +70,7 @@ button {
 
 .card__left {
   background: var(--bright-orange);
+  border-radius: 10px 0px 0px 10px;
 }
 
 .card__left button {
@@ -96,6 +97,7 @@ button {
 
 .card__right {
   background: var(--very-dark-cyan);
+  border-radius: 0px 10px 10px 0px;
 }
 
 .card__right button {
@@ -115,5 +117,11 @@ button {
   .cards {
     display: grid;
     place-content: center;
+  }
+  .card__left {
+    border-radius: 10px 10px 0 0;
+  }
+  .card__right {
+    border-radius: 0 0 10px 10px;
   }
 }
